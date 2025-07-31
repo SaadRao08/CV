@@ -1,0 +1,147 @@
+body {
+    padding: 0%;
+  margin: 0%;
+  font-family: 'Georgia', serif;
+  background: #000;
+  overflow: hidden;
+}
+
+.star-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse at bottom, #111 0%, #000 100%);
+  background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.cv-card {
+  position: relative;
+  z-index: 1;
+  width: 450px;
+  margin: 80px auto;
+  padding: 40px 30px;
+  background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+  border: 2px solid gold;
+  border-radius: 12px;
+  box-shadow: 0 0 40px gold, 0 0 80px rgba(255, 215, 0, 0.2);
+  text-align: center;
+  transform: perspective(800px) rotateX(5deg) rotateY(-5deg);
+  transition: transform 1s ease-in-out;
+}
+
+.cv-card:hover {
+  transform: perspective(800px) rotateX(0deg) rotateY(0deg);
+}
+
+h1 {
+  font-size: 2.5em;
+  color: gold;
+  margin-bottom: 0.2em;
+}
+
+h2 {
+  font-size: 1.2em;
+  color: #ffd700;
+  letter-spacing: 2px;
+}
+
+hr {
+  border: 0;
+  height: 2px;
+  background: gold;
+  margin: 20px 0;
+  width: 80%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  color: #ffd700;
+  font-size: 1em;
+  text-align: left;
+}
+
+ul li {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+ul li span {
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid rgb(33, 168, 51);
+  margin-bottom: 20px;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+}
+.education {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  border-left: 3px solid rgb(34, 175, 29);
+  color: #ffd700;
+  font-size: 0.85em;
+  max-width: 180px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+  text-align: left;
+}
+
+
+ .education {
+  position: absolute;
+  bottom: 40px;
+  left: 280px; /* ⬅️ moved from left to right */
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffd700;
+  padding: 12px 16px;
+  border-right: 3px solid rgb(34, 175, 29);
+  border-radius: 6px;
+  font-size: 0.85em;
+  width: 75%;
+  box-shadow: 0 0 10px rgb(34, 175, 29);
+}
+
+.skills {
+  position: absolute;
+  top: 20px;
+  right: 220px;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffd700;
+  padding: 12px 16px;
+  border-right: 3px solid gold;
+  border-radius: 6px;
+  font-size: 0.85em;
+  width: 75%;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+.skills h3 {
+  margin: 0 0 8px 0;
+  font-size: 1em;
+  border-bottom: 1px solid gold;
+  padding-bottom: 4px;
+}
+
+.skills ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.skills li {
+  margin: 6px 0;
+}
